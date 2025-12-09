@@ -51,12 +51,8 @@ nav a:hover {
 
 #logo { 
     width: 150px;
-    height: 150px;
-    object-fit: contain;
+    margin-bottom: 15px;
     border-radius: 50%;
-    display: block;
-    margin: 0 auto 15px;
-    background: transparent;
 }
 
 #home h1 {
