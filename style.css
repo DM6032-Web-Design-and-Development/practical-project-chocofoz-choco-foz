@@ -104,7 +104,6 @@ nav a:hover { background: #A0522D; }
     border: 1px solid #D2691E;
 }
 
-/* Contact Section */
 #contact { 
     margin-top: 30px; 
     padding: 40px 20px;
@@ -156,9 +155,7 @@ button {
     cursor: pointer;
 }
 
-button:hover {
-    background: #A0522D;
-}
+button:hover { background: #A0522D; }
 
 footer {
     background: #8B4513;
