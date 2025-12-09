@@ -49,14 +49,16 @@ nav a:hover {
     margin-bottom: 15px;
 }
 
-#logo { 
-    width: 240px;         
-    height: 240px;         
-    object-fit: cover;   
-    border-radius: 50%;    
+#logo {
+    width: 240px;
+    height: 240px;
+    object-fit: contain;
+    border-radius: 50%;
+    background: #FFF8F0;
+    padding: 10px;
+    border: 4px solid #FFF;
     display: block;
-    margin: 0 auto 20px;   
-    border: 4px solid #FFF8F0; 
+    margin: 0 auto 20px; 
 }
 
 #home h1 {
