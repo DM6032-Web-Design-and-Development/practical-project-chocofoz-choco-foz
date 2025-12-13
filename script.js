@@ -4,5 +4,5 @@ document.getElementById("contactForm").onsubmit = function() {
 };
 
 document.getElementsByTagName("tr")[2].onclick = function() {
-    alert("Lebanese Premium Chocolate is our best seller!");
+    alert("this is  is our best seller!");
 };
