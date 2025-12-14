@@ -4,97 +4,186 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Choco Foz Shop</title>
-    <link rel="stylesheet" href="style.css">
     <style>
-        /* Inline styles for the banner */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 10px;
+            background-color: #8B4513;
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
         .banner {
             position: relative;
             width: 100%;
-            height: 400px; /* Adjust height as needed */
+            height: 400px;
             overflow: hidden;
         }
+
         .banner img {
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
+
         .banner h1, .banner p {
             position: absolute;
-            color: black; /* Changed to black */
-            text-align: center;
             left: 50%;
             transform: translateX(-50%);
+            color: black;
+            text-align: center;
+            margin: 0;
         }
+
         .banner h1 {
             top: 30%;
-            font-size: 2.5em;
+            font-size: 3em;
         }
+
         .banner p {
             top: 50%;
             font-size: 1.5em;
         }
+
+        #products {
+            width: 80%;
+            margin: 20px auto;
+        }
+
+        #products table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        #products th, #products td {
+            border: 1px solid #ddd;
+            padding: 10px;
+        }
+
+        #products th {
+            background-color: transparent;
+            color: #000;
+        }
+
+        #products td img {
+            display: block;
+            margin: 0 auto;
+            max-width: 150px;
+            height: auto;
+        }
+
+        #contact {
+            width: 80%;
+            margin: 20px auto;
+        }
+
+        #contact input, #contact textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #8B4513;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #8B4513;
+            color: white;
+            margin-top: 30px;
+        }
     </style>
 </head>
 <body>
+
     <nav>
-        <ul class="nav">
-            <li><a href="#home" class="navlink">Home</a></li>
-            <li><a href="#products" class="navlink">Products</a></li>
-            <li><a href="#contact" class="navlink">Contact Us</a></li>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#contact">Contact Us</a></li>
         </ul>
     </nav>
+
     <section id="home">
         <div class="banner">
-            <img src="banner.png" alt="Banner Image" id="bannerImage">
+            <img src="banner.png" alt="Banner Image">
             <h1>Welcome to Choco Foz</h1>
             <p>Premium imported chocolates from Lebanon and Turkey. Experience the finest confectionery in Bahrain.</p>
         </div>
     </section>
+
     <section id="products">
         <h2>Our Chocolate Collection</h2>
-        <table class="table">
+        <table>
             <tr>
                 <th>Image</th>
                 <th>Chocolate</th>
                 <th>Price</th>
             </tr>
             <tr>
-                <td><img src="photo.png1" alt="Turkish Delight" class="image1"></td>
+                <td><img src="photo1.png" alt="Turkish Delight"></td>
                 <td>Turkish Delights</td>
                 <td>8.500 BD</td>
             </tr>
             <tr>
-                <td><img src="photo.png2" alt="Tray Chocolate Mix" class="image2"></td>
+                <td><img src="photo2.png" alt="Tray Chocolate Mix"></td>
                 <td>Tray Chocolate Mix</td>
                 <td>6.000 BD</td>
             </tr>
             <tr>
-                <td><img src="photo.png3" alt="Turkish Assorted Mix Kadayif" class="image3"></td>
+                <td><img src="photo3.png" alt="Turkish Assorted Mix Kadayif"></td>
                 <td>Turkish Assorted Mix Kadayif</td>
                 <td>4.500 BD</td>
             </tr>
             <tr>
-                <td><img src="photo.png4" alt="Rectangle Golden Brown Gift Box" class="image4"></td>
+                <td><img src="photo4.png" alt="Special Gift Box"></td>
                 <td>Special Gift Box</td>
                 <td>12.000 BD</td>
             </tr>
         </table>
     </section>
+
     <section id="contact">
         <h2>Contact Form</h2>
-        <form id="contactForm" action="your-form-handler-url" method="post">
-            <label for="name">Your Name</label><br>
-            <input type="text" id="name" required><br><br>
-            <label for="email">Your Email</label><br>
-            <input type="email" id="email" required><br><br>
-            <label for="message">Write Your Inquiries</label><br>
-            <textarea id="message" rows="4" cols="50" required></textarea><br><br>
+        <form id="contactForm">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" required>
+
+            <label for="email">Your Email</label>
+            <input type="email" id="email" required>
+
+            <label for="message">Write Your Inquiries</label>
+            <textarea id="message" rows="4" required></textarea>
+
             <button type="submit">Submit</button>
         </form>
     </section>
+
     <footer>
         <p>&copy; 2025 Choco Foz. All rights reserved</p>
     </footer>
-    <script src="script.js"></script>
+
 </body>
 </html>
+
